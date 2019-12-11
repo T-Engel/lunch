@@ -7,10 +7,10 @@ NULL
 
 #' Check MPI menu
 #'
-#' @return
+#'
 #' @export
 #'
-#' @examples
+
 whatsforlunch<- function(){
     #Doing some research
     day= as.POSIXlt(Sys.Date())$wday
@@ -98,7 +98,7 @@ make_time_message<- function(){
 
 #' Makes a message about alerts taking into account whe
 #'
-#' @return
+#' @return character.
 
 make_alert_message<-function(todays_alerts, upcoming){
 

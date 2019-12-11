@@ -21,8 +21,7 @@ get_menu<-function(){
 #'
 #' @return a vector of all the relevant alerts
 #'
-#'
-#' @examples
+
 check_alert<-function(menu, alerts= alerts){
     result<-sapply(alerts, function(term) grepl(term, menu, ignore.case=T))
 
@@ -30,14 +29,13 @@ check_alert<-function(menu, alerts= alerts){
 }
 
 
-#' Title
+#' extract todays menu
 #'
 #' @param menu character string
 #' @param day numeric weekday
 #'
-#' @return
-#'
-#' @examples
+#' @return character string
+
 todays_menu<-function(menu , day ){
     days <- c("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag")
 

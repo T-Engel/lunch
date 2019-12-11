@@ -6,6 +6,9 @@
 \usage{
 make_alert_message(todays_alerts, upcoming)
 }
+\value{
+character.
+}
 \description{
 Makes a message about alerts taking into account whe
 }

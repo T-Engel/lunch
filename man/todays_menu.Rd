@@ -2,7 +2,7 @@
 % Please edit documentation in R/scraping.R
 \name{todays_menu}
 \alias{todays_menu}
-\title{Title}
+\title{extract todays menu}
 \usage{
 todays_menu(menu, day)
 }
@@ -12,8 +12,8 @@ todays_menu(menu, day)
 \item{day}{numeric weekday}
 }
 \value{
-
+character string
 }
 \description{
-Title
+extract todays menu
 }
