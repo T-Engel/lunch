@@ -38,14 +38,14 @@ whatsforlunch()
 ```
 
 You'll be prompted with a message commenting on the menu and giving you food alerts.
-```{r}
+```{r, echo=FALSE, out.width= "40%"}
 include_graphics("man/figures/README-Example1.JPG") 
 ```
 
 
 Click Yes to proceed to the website:
 
-```{r}
+```{r, echo= FALSE }
 include_graphics("man/figures/README-Example2.JPG") 
 ```
 
