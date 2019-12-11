@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Build
+Status](https://travis-ci.com/T-Engel/lunch.svg?branch=master)](https://travis-ci.com/T-Engel/lunch)
 <!-- badges: end -->
 
 The goal of the lunch package is to keep users informed about the lunch
