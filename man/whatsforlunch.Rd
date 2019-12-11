@@ -2,16 +2,10 @@
 % Please edit documentation in R/whatsforlunch.R
 \name{whatsforlunch}
 \alias{whatsforlunch}
-\title{Browsing the MPI menu}
+\title{Check MPI menu}
 \usage{
 whatsforlunch()
 }
 \description{
-Opens the MPI website in your browser.
-}
-\examples{
-\dontrun{
-whatsforlunch()
-}
-
+Check MPI menu
 }
