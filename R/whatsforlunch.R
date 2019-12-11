@@ -1,6 +1,7 @@
 #' @import rvest
 #' @import praise
 #' @import R.utils
+#' @import xml2
 #'
 NULL
 
