@@ -3,7 +3,7 @@
 link = "http://www.tafelwerk-leipzig.de/index.php?id=11"
 
 ##enjoy sentences
-#' @export
+
 enjoy_sentences = c(
     "Enjoy your meal!",
     "You know there's always Asia Imbiss",
@@ -16,7 +16,7 @@ enjoy_sentences = c(
 )
 
 ##Alerts
-#' @export
+
 
 alerts = c("guacamole",
            "avocado",
@@ -27,7 +27,7 @@ alerts = c("guacamole",
 
 
 ## early
-#' @export
+
 
 early_chunks = c(
     "It's before 10 AM and you are already thinking about lunch?",
@@ -37,7 +37,7 @@ early_chunks = c(
 )
 
 ## late
-#' @export
+
 late_chunks = c(
     "You're a little late today. The good options might all be gone by now.",
     "Wow it's late. At this time there will only be leftovers.",
@@ -53,7 +53,7 @@ closed_chunks = c(
 )
 
 ## weekend
-#' @export
+
 weekend_chunks = c(
     "It's the fucking weekend! Get up and go outside!",
     "MPI doesn't work on the weekend, I don't work on the weekend and you shouldn't work on the weekend either!",
@@ -61,22 +61,22 @@ weekend_chunks = c(
     "Ask me again on Monday. Have a nice weekend!"
 )
 ## timely
-#' @export
+
 timely_chunks = c(
     "Let's have a look at the MPI menu.",
     "You deserve some good lunch.",
     "Are you excited to see what they have at MPI today?",
     "Let me do some research for you.",
     "I know it's luch time.",
-    "Are you ready for lunch?",
-    "How are you doing today?"
+    "Are you ready for lunch? Lets see.",
+    "How are you doing today? Here is the lunch report."
 
 
 
 )
 
 ## alerts
-#' @export
+
 today_alert_chunks = list(
     c(
         "today they have",
@@ -108,10 +108,10 @@ upcoming_alert_chunks = list(
 )
 
 ## question chunks
-#' @export
+
 question_chunks <-c(
     "Fancy seeing the menu?",
     "Shall I show you the menu?",
     "Do you want to see it for yourself?",
-    "Want to have a look at the menu?"
+    "Wanna have a look at the menu?"
 )
