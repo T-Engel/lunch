@@ -29,6 +29,11 @@ library(lunch)
 whatsforlunch()
 ```
 
-You’ll be prompted with something like this:
+You’ll be prompted with a message commenting on the menu and giving you
+food alerts.
 
-![Example output](man/figures/README-Example1.JPG)
+![Example\_output](man/figures/README-Example1.JPG)
+
+Click Yes to proceed to the website:
+
+![website](man/figures/README-Example2.JPG)
