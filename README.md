@@ -32,8 +32,16 @@ whatsforlunch()
 You’ll be prompted with a message commenting on the menu and giving you
 food alerts.
 
-![Example\_output](man/figures/README-Example1.JPG)
+``` r
+include_graphics("man/figures/README-Example1.JPG") 
+```
+
+<img src="man/figures/README-Example1.JPG" width="60%" />
 
 Click Yes to proceed to the website:
 
-![website](man/figures/README-Example2.JPG)
+``` r
+include_graphics("man/figures/README-Example2.JPG") 
+```
+
+<img src="man/figures/README-Example2.JPG" width="60%" />

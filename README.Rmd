@@ -9,8 +9,9 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "30%"
+  out.width = "60%"
 )
+library(knitr)
 ```
 # lunch
 
@@ -37,11 +38,15 @@ whatsforlunch()
 ```
 
 You'll be prompted with a message commenting on the menu and giving you food alerts.
+```{r}
+include_graphics("man/figures/README-Example1.JPG") 
+```
 
-![Example_output](man/figures/README-Example1.JPG)
 
 Click Yes to proceed to the website:
 
-![website](man/figures/README-Example2.JPG)
+```{r}
+include_graphics("man/figures/README-Example2.JPG") 
+```
 
 
