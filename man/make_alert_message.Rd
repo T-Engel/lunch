@@ -6,6 +6,11 @@
 \usage{
 make_alert_message(todays_alerts, upcoming)
 }
+\arguments{
+\item{todays_alerts}{character vector}
+
+\item{upcoming}{character vector}
+}
 \value{
 character.
 }

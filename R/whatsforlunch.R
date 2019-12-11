@@ -1,15 +1,19 @@
 #' @import rvest
 #' @import praise
-#' @import R.utils
+#' @import utils
 #' @import xml2
-#'
-NULL
+requireNamespace("rvest")
+requireNamespace("praise")
+requireNamespace("xml2")
+requireNamespace("R.utils")
 
 
 #' Check MPI menu
 #'
 #'
 #' @export
+#' @importFrom utils askYesNo browseURL
+#' @importFrom R.utils capitalize
 #'
 
 whatsforlunch<- function(){
@@ -98,6 +102,9 @@ make_time_message<- function(){
 }
 
 #' Makes a message about alerts taking into account whe
+#'
+#' @param todays_alerts character vector
+#' @param upcoming character vector
 #'
 #' @return character.
 

@@ -1,5 +1,4 @@
 ## Link to website
-#' @export
 link = "http://www.tafelwerk-leipzig.de/index.php?id=11"
 
 ##enjoy sentences
@@ -22,8 +21,7 @@ alerts = c("guacamole",
            "avocado",
            "kroketten",
            "pommes",
-           "pizza",
-           "süßkartoffel")
+           "pizza")
 
 
 ## early
