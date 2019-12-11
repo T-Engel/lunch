@@ -28,3 +28,5 @@ Here is how you can check the menu:
 library(lunch)
 whatsforlunch()
 ```
+
+![Example output](man/figures/README-Example1.JPG)

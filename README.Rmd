@@ -36,3 +36,4 @@ library(lunch)
 whatsforlunch()
 ```
 
+![Example output](man/figures/README-Example1.JPG)
