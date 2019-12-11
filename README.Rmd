@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "60%"
 )
 ```
 # lunch
@@ -35,5 +35,7 @@ Here is how you can check the menu:
 library(lunch)
 whatsforlunch()
 ```
+
+You'll be prompted with something like this:
 
 ![Example output](man/figures/README-Example1.JPG)

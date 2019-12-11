@@ -29,4 +29,6 @@ library(lunch)
 whatsforlunch()
 ```
 
+You’ll be prompted with something like this:
+
 ![Example output](man/figures/README-Example1.JPG)
