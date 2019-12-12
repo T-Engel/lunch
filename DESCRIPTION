@@ -8,9 +8,11 @@ Description: Gives you alerts and some nice words on the daily menu of MPI.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Imports:
     R.utils,
     praise,
     rvest,
-    xml2
+    xml2,
+    stringi,
+    usethis

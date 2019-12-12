@@ -21,8 +21,10 @@ whatsforlunch<- function(){
     day= as.POSIXlt(Sys.Date())$wday
     week= get_menu()
     today= todays_menu(week, day)
-    todays_alerts= check_alert(today, alerts=alerts)
-    upcoming<-sapply((day+1):5, function(x) check_alert(todays_menu(week,x), alerts= alerts))
+
+    all_alerts= union(alerts, get_my_lunch_alerts())
+    todays_alerts= check_alert(today, alerts=all_alerts)
+    upcoming<-sapply((day+1):5, function(x) check_alert(todays_menu(week,x), alerts= all_alerts))
     if(day>=5) upcoming = NULL
     upcoming<- unlist(upcoming)
 
@@ -101,6 +103,16 @@ make_time_message<- function(){
 
 }
 
+make_numeration= function(text){
+    len=length(text)
+    if(len==1){
+        out= text
+        }else{
+        out= paste(paste(text[-len],collapse = ", "), text[len], sep = " and ")
+    }
+    return(out)
+    }
+
 #' Makes a message about alerts taking into account whe
 #'
 #' @param todays_alerts character vector
@@ -119,7 +131,7 @@ make_alert_message<-function(todays_alerts, upcoming){
                                 " ",
                                 sample(today_alert_chunks[[1]],1),
                                 " ",
-                                todays_alerts
+                                make_numeration(todays_alerts)
         )
 
     }
@@ -134,7 +146,7 @@ make_alert_message<-function(todays_alerts, upcoming){
                                 ", ",
                                 sample(upcoming_alert_chunks[[1]],1),
                                 " ",
-                                upcoming,
+                                make_numeration(upcoming),
                                 "."
         )
 
@@ -150,4 +162,49 @@ make_alert_message<-function(todays_alerts, upcoming){
     return(total)
 }
 
+#' See user-defined lunch alerts
+#'
+#' @param escape unescape unicode character sequences?
+#'
+#' @return character vector
+#'
+#' @importFrom stringi stri_unescape_unicode
+#' @export
 
+get_my_lunch_alerts<-function(escape=T){
+    my_lunch_alerts=Sys.getenv("my_lunch_alerts")
+    my_lunch_alerts= gsub(" ", "", my_lunch_alerts, fixed = TRUE)
+    if(escape==T) my_lunch_alerts= stringi::stri_unescape_unicode(my_lunch_alerts)
+    my_lunch_alerts= unlist(strsplit(my_lunch_alerts, ","))
+
+
+    return(my_lunch_alerts)
+}
+
+#' Customize lunch alerts
+#'
+#' Creates a character string, copies it to the clipboard and opens the .Renviron file.
+#' Then the user pastes the string and saves the file.
+#'
+#' @param alerts character vector of food alerts.
+#' @param append add to previously set alerts?
+#' @importFrom stringi stri_escape_unicode
+#' @importFrom usethis edit_r_environ
+#'
+#' @export
+#'
+#' @examples
+set_my_lunch_alerts<- function(alerts, append =T){
+    alerts= stringi::stri_escape_unicode(alerts)
+    if(append){
+    old_alerts=get_my_lunch_alerts(escape = F)
+    alerts= paste0(union(old_alerts, alerts), collapse = ",")
+    }
+    alert_string= paste0("my_lunch_alerts=","\"",alerts, "\"")
+    writeClipboard(alert_string)
+
+    message= "Your lunch alerts have been copied to the clipboard. Please, paste them into your .Renviron file. This will help me remember them the next time you load the package. Then save the file and restart R. \n \n Do you want me to open the .Renviron file now?"
+
+    if (interactive()) if(askYesNo(msg =message )) edit_r_environ()
+
+}

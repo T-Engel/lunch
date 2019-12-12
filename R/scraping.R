@@ -45,4 +45,3 @@ todays_menu<-function(menu , day ){
 
 }
 
-

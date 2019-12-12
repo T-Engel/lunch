@@ -37,3 +37,63 @@ food alerts. <img src="man/figures/README-Example1.JPG" width="40%" />
 Click Yes to proceed to the website:
 
 <img src="man/figures/README-Example2.JPG" width="60%" />
+
+`lunch` has some sensible default alerts that people generaly like to
+know about. “Kroketten” like in the example above is surely one of them.
+Here is the full list of preset alerts:
+
+    #> guacamole avocado kroketten pommes pizza
+
+## Setting your own alerts
+
+`lunch` also lets you set your own alerts. For example, if you die for
+kartoffelpüree and aubergine you can tell the package and it will
+remember. Here is how:
+
+``` r
+set_my_lunch_alerts(alerts = c("kartoffelpüree", "aubergine"))
+```
+
+This function will generate a string, copy it to your clipboard and ask
+you to save it in your R.environ file. No worries, it’ll also find the
+file for you if you like.
+
+``` r
+include_graphics("man/figures/README-Example3.JPG") 
+```
+
+<img src="man/figures/README-Example3.JPG" width="40%" />
+
+This is how your R.environ file might look like. Probably it’s empty.
+But maybe you have some other definitions in there:
+
+``` r
+include_graphics("man/figures/README-Example4.JPG") 
+```
+
+<img src="man/figures/README-Example4.JPG" width="60%" />
+
+Just paste the string from your clipboard into the file (ctrl+v), save
+it (ctrl+s) and restart R (crtl+shift+F10).
+
+``` r
+include_graphics("man/figures/README-Example5.JPG") 
+```
+
+<img src="man/figures/README-Example5.JPG" width="60%" />
+
+When you now reload `lunch` it’ll remember your food alerts
+
+``` r
+library(lunch)
+whatsforlunch()
+```
+
+``` r
+include_graphics("man/figures/README-Example6.JPG") 
+```
+
+<img src="man/figures/README-Example6.JPG" width="60%" />
+
+It looks like were lucky and they do infact have Kartoffelpüree this
+week.
