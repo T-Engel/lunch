@@ -65,7 +65,7 @@ timely_chunks = c(
     "You deserve some good lunch.",
     "Are you excited to see what they have at MPI today?",
     "Let me do some research for you.",
-    "I know it's luch time.",
+    "I know it's lunch time.",
     "Are you ready for lunch? Lets see.",
     "How are you doing today? Here is the lunch report."
 
@@ -81,12 +81,22 @@ today_alert_chunks = list(
         "there is an alert for",
         "get ready for",
         "I think today they have",
-        "today I can smell"
+        "today I can smell",
+        "today we present fresh",
+        "what are you waiting for?! There is"
+
+
+
     ),
     c(
         "Nothing special today",
         "There is no alert for today",
-        "Today doesn't look alarming"
+        "Today doesn't look alarming",
+        "Today there is nothing of interest",
+        "I'm afraid I have no alert for today",
+        "Maybe today you want a salad from the HIT",
+        "Why don't you get Asia Imbiss today",
+        "HIT salad bar is the best choice for today"
     )
 )
 
@@ -96,7 +106,8 @@ upcoming_alert_chunks = list(
         "later this week they are going to make",
         "upcoming this week:",
         "later this week there will be",
-        "later this week we have alerts for"
+        "later this week we have alerts for",
+        "the rest of the week looks promising. They are preparing"
 
     ),
     c(
@@ -111,5 +122,8 @@ question_chunks <-c(
     "Fancy seeing the menu?",
     "Shall I show you the menu?",
     "Do you want to see it for yourself?",
-    "Wanna have a look at the menu?"
+    "Wanna have a look at the menu?",
+    "Do you want to know more?",
+    "I can show you the menu if you insist.",
+    "You still want to see the menu, don't you?"
 )
