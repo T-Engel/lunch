@@ -40,7 +40,7 @@ Click Yes to proceed to the website:
 
 `lunch` has some sensible default alerts that people generaly like to
 know about. “Kroketten” like in the example above is surely one of them.
-Here is the full list of preset alerts:
+Here is the full list of pre-set alerts:
 
     #> guacamole avocado kroketten pommes pizza
 
@@ -81,4 +81,4 @@ whatsforlunch()
 It looks like we’re lucky and they do infact have Kartoffelpüree this
 week. Click “yes” to proceed to the menu.
 
-Enjoy your meal\!
+Enjoy your `lunch`\!
