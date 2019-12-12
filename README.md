@@ -9,8 +9,8 @@
 Status](https://travis-ci.com/T-Engel/lunch.svg?branch=master)](https://travis-ci.com/T-Engel/lunch)
 <!-- badges: end -->
 
-The goal of the lunch package is to keep users informed about the lunch
-menu at MPI.
+The goal of the `lunch` package is to keep users informed about the
+lunch menu at MPI.
 
 ## Installation
 
@@ -24,7 +24,7 @@ devtools::install_github("T-Engel/lunch")
 
 ## Example
 
-Here is how you can check the menu:
+Here, is how you can check the menu:
 
 ``` r
 library(lunch)
@@ -56,44 +56,29 @@ set_my_lunch_alerts(alerts = c("kartoffelpüree", "aubergine"))
 
 This function will generate a string, copy it to your clipboard and ask
 you to save it in your R.environ file. No worries, it’ll also find the
-file for you if you like.
-
-``` r
-include_graphics("man/figures/README-Example3.JPG") 
-```
+file for you if you like. Just click “yes” in the next prompt:
 
 <img src="man/figures/README-Example3.JPG" width="40%" />
 
 This is how your R.environ file might look like. Probably it’s empty.
 But maybe you have some other definitions in there:
-
-``` r
-include_graphics("man/figures/README-Example4.JPG") 
-```
-
-<img src="man/figures/README-Example4.JPG" width="60%" />
+<img src="man/figures/README-Example4.JPG" width="50%" />
 
 Just paste the string from your clipboard into the file (ctrl+v), save
 it (ctrl+s) and restart R (crtl+shift+F10).
 
-``` r
-include_graphics("man/figures/README-Example5.JPG") 
-```
+<img src="man/figures/README-Example5.JPG" width="50%" />
 
-<img src="man/figures/README-Example5.JPG" width="60%" />
-
-When you now reload `lunch` it’ll remember your food alerts
+When you now reload `lunch`, it’ll remember your food alerts
 
 ``` r
 library(lunch)
 whatsforlunch()
 ```
 
-``` r
-include_graphics("man/figures/README-Example6.JPG") 
-```
+<img src="man/figures/README-Example6.JPG" width="50%" />
 
-<img src="man/figures/README-Example6.JPG" width="60%" />
+It looks like we’re lucky and they do infact have Kartoffelpüree this
+week. Click “yes” to proceed to the menu.
 
-It looks like were lucky and they do infact have Kartoffelpüree this
-week.
+Enjoy your meal\!

@@ -193,7 +193,6 @@ get_my_lunch_alerts<-function(escape=T){
 #'
 #' @export
 #'
-#' @examples
 set_my_lunch_alerts<- function(alerts, append =T){
     alerts= stringi::stri_escape_unicode(alerts)
     if(append){
