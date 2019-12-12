@@ -10,7 +10,7 @@ enjoy_sentences = c(
     "The MPI lady will smile at you if you have exact change.",
     "HIT me baby one more time",
     "Why are you even checking? Don't you ALWAYS have the vegetarian option regardless of what it is?",
-    "Let's hope the vegetarian option is not a desert..."
+    "Let's hope the vegetarian option is not a dessert..."
 
 )
 
@@ -83,10 +83,10 @@ today_alert_chunks = list(
         "I think today they have",
         "today I can smell",
         "today we present fresh",
-        "what are you waiting for?! There is"
-
-
-
+        "what are you waiting for?! There is",
+        "Screw HIT today. MPI has",
+        "Forget about Asia Imbiss today. MPI is making",
+        "we proudly present"
     ),
     c(
         "Nothing special today",
@@ -112,7 +112,11 @@ upcoming_alert_chunks = list(
     ),
     c(
         "there is nothing interesting for the rest of the week.",
-        "there is no upcoming alert for the rest of the week."
+        "there is no upcoming alert for the rest of the week.",
+        "you can get Asia imbiss for the rest of the week.",
+        "HIT will be your friend from tomorrow onwards.",
+        "you better bring your own food for the rest of the week."
+
     )
 )
 
