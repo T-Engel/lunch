@@ -41,6 +41,15 @@ todays_menu<-function(menu , day ){
 
   out<-  unlist(strsplit(menu, split = days[day]))[2]
   out<-  unlist(strsplit(out, split = days[day+1]))[1]
+
+  if(day==5){
+    out<-  unlist(strsplit(menu, split = days[day]))[3]
+  }else{
+    out<-  unlist(strsplit(menu, split = days[day]))[2]
+    out<-  unlist(strsplit(out, split = days[day+1]))[1]
+
+  }
+
   return(out)
 
 }
