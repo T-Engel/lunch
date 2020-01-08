@@ -153,7 +153,7 @@ make_alert_message<-function(todays_alerts, upcoming){
     }
 
 
-    conjunction<-ifelse({is.null(todays_alerts)|length(todays_alerts)==0 }& {!is.null(upcoming)| length(upcoming)!=0}, "but", "and")
+    conjunction<-ifelse({length(todays_alerts)==0 }& { length(upcoming)!=0}, "but", "and")
     if  (format(Sys.time(),"%H")>= 15){
         todays_message= sample(closed_chunks, 1)
         conjunction<-ifelse({is.null(upcoming)|length(upcoming)==0 },  "and", "but")
