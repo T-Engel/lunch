@@ -1,5 +1,5 @@
 ## Link to website
-link = "http://www.tafelwerk-leipzig.de/index.php?id=11"
+link = "http://tafelwerk-leipzig.info/?page_id=22"
 
 ##enjoy sentences
 
